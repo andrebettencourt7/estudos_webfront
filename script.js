@@ -12,6 +12,7 @@ let idadeNamorada = "23";
 
 //console.log(idade === idadeNamorada);
 
+/*
 let listaCompras = [];
 
 listaCompras.push("Maça", "Pêra");
@@ -19,3 +20,19 @@ listaCompras.push("Maça", "Pêra");
 
 console.log(listaCompras.length);
 console.log(listaCompras);
+*/
+
+//Array 
+
+/* Acessamos o array fazendo ref ao index
+*/
+
+let lista = [1, 2, 3, 4, 5, 6]
+
+for (let index = 0; index < lista.length; index++) {
+    const element = lista[index];
+
+    console.log(element);
+};
+
+
