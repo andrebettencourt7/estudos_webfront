@@ -10,5 +10,12 @@ let idadeNamorada = "23";
 === comparar se é exatamente igual
 */
 
-console.log(idade === idadeNamorada);
+//console.log(idade === idadeNamorada);
 
+let listaCompras = [];
+
+listaCompras.push("Maça", "Pêra");
+
+
+console.log(listaCompras.length);
+console.log(listaCompras);
