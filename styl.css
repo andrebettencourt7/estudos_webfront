@@ -1,4 +1,13 @@
 h1{
     color: red;
-    font-size: larger;
 }
+
+span{
+    background-color: lightgray;
+    padding: 4px;
+    margin: 15px;
+    border-radius: 6px;
+    color: black;
+    margin: 5px;
+}
+

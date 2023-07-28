@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,21 @@
 
     <title>Document</title>
 </head>
+
 <body>
 
-    <h1>Hello Word!!</h1>
+    <h1 id="titulo"></h1>
+    <span>Nome:</span><input id="nome"  type="text"><br>
+    <span>Email:</span><input id="email"  type="text"><br>
+    <span>Telefone:</span><input id="telefone"  type="text"><br>
+    <button onclick="salvar()">Salvar</button>
+
+    <h3 id="result_nome"></h3>
+    <h3 id="result_email"></h3>
+    <h3 id="result_telefone"></h3>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
