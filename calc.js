@@ -10,18 +10,26 @@ porcent.textContent = "*No caso de porcentagem, colocar o valor q deseja saber n
 
 function calculo(operacao) {
 
-    if(operacao === "somar"){
-        resultado.textContent = Number(numero1.value) + Number(numero2.value);
-    }else if(operacao === "subtrair"){
-        resultado.textContent = Number(numero1.value) - Number(numero2.value);
-    }else if(operacao === "dividir"){
-        resultado.textContent = Number(numero1.value) / Number(numero2.value);
-    }else if(operacao === "multiplicar"){
-        resultado.textContent = Number(numero1.value) * Number(numero2.value);
-    }else if(operacao === "porcentagem"){
-        resultado.textContent = Number(numero1.value) * (Number(numero2.value)/100);
-    }else{
-        alert("Não foi possivel realizar essa função")
+    switch (operacao) {
+        case "somar":
+            resultado.textContent = Number(numero1.value) + Number(numero2.value);
+            break;
+        case "subtrair":
+            resultado.textContent = Number(numero1.value) - Number(numero2.value);
+            break;
+        case "dividir":
+            resultado.textContent = Number(numero1.value) / Number(numero2.value);
+            break;
+        case "multiplicar":
+            resultado.textContent = Number(numero1.value) * Number(numero2.value);
+            break;
+        case "porcentagem":
+            resultado.textContent = Number(numero1.value) * (Number(numero2.value)/100);
+            break;
+    
+        default:
+            alert("Não foi possivel realizar essa função");
+            break;
     }
 
 }
