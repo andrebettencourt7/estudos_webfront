@@ -8,22 +8,21 @@ porcent.textContent = "*No caso de porcentagem, colocar o valor q deseja saber n
 
 
 
-function somar() {
-    resultado.textContent = Number(numero1.value) + Number(numero2.value);
+function calculo(operacao) {
+
+    if(operacao === "somar"){
+        resultado.textContent = Number(numero1.value) + Number(numero2.value);
+    }else if(operacao === "subtrair"){
+        resultado.textContent = Number(numero1.value) - Number(numero2.value);
+    }else if(operacao === "dividir"){
+        resultado.textContent = Number(numero1.value) / Number(numero2.value);
+    }else if(operacao === "multiplicar"){
+        resultado.textContent = Number(numero1.value) * Number(numero2.value);
+    }else if(operacao === "porcentagem"){
+        resultado.textContent = Number(numero1.value) * (Number(numero2.value)/100);
+    }else{
+        alert("Não foi possivel realizar essa função")
+    }
+
 }
 
-function subtrair() {
-    resultado.textContent = Number(numero1.value) - Number(numero2.value);
-}
-
-function dividir() {
-    resultado.textContent = Number(numero1.value) / Number(numero2.value);
-}
-
-function multiplicar() {
-    resultado.textContent = Number(numero1.value) * Number(numero2.value);
-}
-
-function porcentagem() {
-    resultado.textContent = Number(numero1.value) * (Number(numero2.value)/100);
-}
