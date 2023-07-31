@@ -7,30 +7,16 @@ resultado.textContent = "Resultado";
 porcent.textContent = "*No caso de porcentagem, colocar o valor q deseja saber no primeiro campo e quanto e o porcento no segundo"
 
 
-
 function calculo(operacao) {
 
-    switch (operacao) {
-        case "somar":
-            resultado.textContent = Number(numero1.value) + Number(numero2.value);
-            break;
-        case "subtrair":
-            resultado.textContent = Number(numero1.value) - Number(numero2.value);
-            break;
-        case "dividir":
-            resultado.textContent = Number(numero1.value) / Number(numero2.value);
-            break;
-        case "multiplicar":
-            resultado.textContent = Number(numero1.value) * Number(numero2.value);
-            break;
-        case "porcentagem":
-            resultado.textContent = Number(numero1.value) * (Number(numero2.value)/100);
-            break;
-    
-        default:
-            alert("Não foi possivel realizar essa função");
-            break;
+    const finalResult = eval("Number(numero1.value)" + operacao + "Number(numero2.value)");
+
+    if(isNaN(finalResult) || !isFinite(finalResult)){
+        alert("Algo errado aconteceu")
+        return
     }
+
+    resultado.textContent = finalResult;
 
 }
 
