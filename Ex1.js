@@ -31,7 +31,7 @@ function comprar() {
 
     valorDesc = valorFinal.textContent*0.1;
 
-    kiloTotal = qtdMaca + qtdMorango;
+    kiloTotal = qtdMaca.value + qtdMorango.value;
 
     if(valorFinal.textContent >= 25 || kiloTotal > 8){
         valorFinal.textContent = valorFinal.textContent - valorDesc;
